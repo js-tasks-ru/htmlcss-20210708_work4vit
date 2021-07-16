@@ -2,34 +2,34 @@
 <!-- Страница с кнопкой -->
 <html lang="ru">
   <head>
+    <link rel="stylesheet" href="./normalize.css">
     <link rel="stylesheet" href="../../assets/css/main.css">
     <link rel="stylesheet" href="./button.css">
+    <link rel="stylesheet" href="./layout.css">
   </head>
   <body>
-    <div>
+    <div class="main">
       <div class="grid">
-        <div class="button button__primary grid__button">
-          <div class="button-text button-text__white button-content">Primary</div>
-        </div>
-        <div class="button button__primary button__disabled grid__button">
-          <div class="button-text button-text__white button-content ">Primary 2</div>
-        </div>
-      </div>
-      <div>
-        <div class="button button__secondary grid__button">
-          <div class="button-text button-text__white button-content">Secondary</div>
-        </div>
-        <div class="button button__secondary button__disabled grid__button">
-          <div class="button-text button-text__white button-content">Secondary 2</div>
-        </div>
-      </div>
-      <div>
-        <div class="button button__alternate grid__button">
-          <div class="button-text button-text__grey button-content">Аlternate</div>
-        </div>
-        <div class="button button__alternate button__disabled">
-          <div class="button-text button-text__grey button-content">Аlternate 2</div>
-        </div>
+        <button class="button button_primary grid-button">
+          Primary
+        </button>
+        <button class="button button_primary button_disabled grid-button">
+          Primary 2
+        </button>
+
+        <button class="button button_secondary grid-button">
+          Secondary
+        </button>
+        <button class="button button_secondary button_disabled grid-button">
+          Secondary 2
+        </button>
+
+        <button class="button button_alternate grid-button">
+          Аlternate
+        </button>
+        <button class="button button_alternate button_disabled grid-button">
+          Аlternate 2
+        </button>
       </div>
     </div>
   </body>
