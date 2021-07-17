@@ -16,7 +16,7 @@
     margin-bottom: 0px;
 }
 .accord__body{
-    width: 650px;
+
 }
 .accord__header{
     font-family: Inter;
@@ -24,7 +24,6 @@
     font-style: normal;
     font-size: 16px;
     line-height: 24px;
-    width: 159px;
     color: var(--black);
     list-style: none;
 }
@@ -34,7 +33,6 @@
     font-style: normal;
     font-size: 16px;
     line-height: 24px;
-    width: 650px;
     color: var(--grey-4);
     margin-bottom: 0px;
     animation: accordOpen 1.5s ease-in-out
