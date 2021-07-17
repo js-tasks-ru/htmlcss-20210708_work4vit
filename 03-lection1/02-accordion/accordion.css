@@ -15,17 +15,20 @@
 .accord__item:last-child{
     margin-bottom: 0px;
 }
-.accord__body{
-
-}
 .accord__header{
+
+    list-style: none;
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: space-between;
+}
+.accord_title{
     font-family: Inter;
     font-weight: 400;
     font-style: normal;
     font-size: 16px;
     line-height: 24px;
     color: var(--black);
-    list-style: none;
 }
 .accord__details{
     font-family: Inter;
@@ -49,14 +52,15 @@
 .accord__header::-webkit-details-marker {  /* нестандартный псевдоэлемент Google Chrome */
     display: none;
 }
-.accord__body[open] + .accord__arrow{
+.accord__body[open] > .accord__header > .accord__arrow{
     transform: rotate(180deg);
 }
 .accord__arrow{
     width: 16px;
     height: 8px;
-    position: absolute;
+/*    position: absolute;
     right: 32px;
     top: 32px;
+*/
     transition: all 800ms ease-in-out
 }
