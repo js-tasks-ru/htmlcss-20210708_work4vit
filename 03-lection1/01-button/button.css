@@ -26,7 +26,7 @@
 /*
 Вариант для работы с классами
 */
-.button_primary:hover:not(:disabled) {
+.button_primary:hover{
     background: #2342C0;
 }
 /*
