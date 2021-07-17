@@ -39,7 +39,7 @@
     margin-bottom: 0px;
     animation: accordOpen 1.5s ease-in-out
 }
-.accord__body:not([open]) .accord__details ~ div{
+.accord__body:not([open]) .accord__details{
     animation: accordOpen 1.5s ease-in-out;
     animation-direction: reverse;
 }
