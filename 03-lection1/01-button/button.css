@@ -21,16 +21,24 @@
 .button_primary {
     background: #4263EB;
     color: var(--white);
-    transition: opacity 200ms ease-in-out, background 200ms ease-in-out;
+    transition: all 200ms ease-in-out;
 }
-.button_primary:hover {
+/*
+Вариант для работы с классами
+*/
+.button_primary:hover:not(:disabled) {
+    background: #2342C0;
+}
+/*
+варинт для работы с атрибутами
+.button_primary:hover:not(:disabled) {
     background: #2342C0;
 
-}
+}*/
 .button_secondary {
     background: var(--secondary);
     color: var(--white);
-    transition: opacity 200ms ease-in-out, background 200ms ease-in-out
+    transition: all 200ms ease-in-out;
 }
 .button_secondary:hover {
     background: #5028C6;
@@ -39,7 +47,7 @@
 .button_alternate {
     border: 1px solid var(--grey-3);
     color: var(--grey-4);
-    transition: opacity 200ms ease-in-out, border 200ms ease-in-out
+    transition: all 200ms ease-in-out;
 }
 .button_alternate:hover {
     border: 1px solid var(--grey-4);
