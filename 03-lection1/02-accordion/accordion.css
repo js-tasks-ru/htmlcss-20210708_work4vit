@@ -10,11 +10,15 @@
     border: 1px solid var(--grey-3);
     padding: 32px 24px 32px 24px;
     box-sizing: border-box;
+    position: relative;
 }
 .accord__item:last-child{
     margin-bottom: 0px;
 }
-.accord-header{
+.accord__body{
+    width: 650px;
+}
+.accord__header{
     font-family: Inter;
     font-weight: 400;
     font-style: normal;
@@ -24,7 +28,7 @@
     color: var(--black);
     list-style: none;
 }
-.accord-details{
+.accord__details{
     font-family: Inter;
     font-weight: 400;
     font-style: normal;
@@ -33,7 +37,32 @@
     width: 650px;
     color: var(--grey-4);
     margin-bottom: 0px;
+    animation: accordOpen 1.5s ease-in-out
 }
-.accord-header::-webkit-details-marker {  /* нестандартный псевдоэлемент Google Chrome */
+.accord__body:not([open]) .accord__details ~ div{
+    animation: accordOpen 1.5s ease-in-out;
+    animation-direction: reverse;
+}
+@keyframes accordOpen {
+    0%{
+        opacity: 0;
+        max-height: 0px;
+    }
+    100%{
+        opacity: 1;
+        max-height: 100px;}
+}
+.accord__header::-webkit-details-marker {  /* нестандартный псевдоэлемент Google Chrome */
     display: none;
+}
+.accord__body[open] + .accord__arrow{
+    transform: rotate(180deg);
+}
+.accord__arrow{
+    width: 16px;
+    height: 8px;
+    position: absolute;
+    right: 32px;
+    top: 32px;
+    transition: all 800ms ease-in-out
 }
