@@ -16,11 +16,15 @@
     margin-bottom: 0px;
 }
 .accord__header{
-
     list-style: none;
+    display: -webkit-box;
+    display: -webkit-inline-flex;
+    display: -webkit-flex;
     display: flex;
     flex-flow: row wrap;
+    -webkit-justify-content: space-between;
     justify-content: space-between;
+
 }
 .accord_title{
     font-family: Inter;
@@ -38,16 +42,7 @@
     line-height: 24px;
     color: var(--grey-4);
     margin-bottom: 0px;
-    animation: accordOpen 1.5s ease-in-out
-}
-@keyframes accordOpen {
-    0%{
-        opacity: 0;
-        max-height: 0px;
-    }
-    100%{
-        opacity: 1;
-        max-height: 100px;}
+
 }
 .accord__header::-webkit-details-marker {  /* нестандартный псевдоэлемент Google Chrome */
     display: none;
