@@ -1,1 +1,61 @@
 /* Стилизация аккордеона */
+.accord {
+    width: 730px;
+    flex-direction: column;
+}
+.accord__item{
+    background: var(--white);
+    border-radius: 8px;
+    margin-bottom: 8px;
+    border: 1px solid var(--grey-3);
+    padding: 32px 24px 32px 24px;
+    box-sizing: border-box;
+    position: relative;
+}
+.accord__item:last-child{
+    margin-bottom: 0px;
+}
+.accord__header{
+    list-style: none;
+    display: -webkit-box;
+    display: -webkit-inline-flex;
+    display: -webkit-flex;
+    display: flex;
+    flex-flow: row wrap;
+    -webkit-justify-content: space-between;
+    justify-content: space-between;
+
+}
+.accord_title{
+    font-family: Inter;
+    font-weight: 400;
+    font-style: normal;
+    font-size: 16px;
+    line-height: 24px;
+    color: var(--black);
+}
+.accord__details{
+    font-family: Inter;
+    font-weight: 400;
+    font-style: normal;
+    font-size: 16px;
+    line-height: 24px;
+    color: var(--grey-4);
+    margin-bottom: 0px;
+
+}
+.accord__header::-webkit-details-marker {  /* нестандартный псевдоэлемент Google Chrome */
+    display: none;
+}
+.accord__body[open] > .accord__header > .accord__arrow{
+    transform: rotate(180deg);
+}
+.accord__arrow{
+    width: 16px;
+    height: 8px;
+/*    position: absolute;
+    right: 32px;
+    top: 32px;
+*/
+    transition: all 800ms ease-in-out
+}
