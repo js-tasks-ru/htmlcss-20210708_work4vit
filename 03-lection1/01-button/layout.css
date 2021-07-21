@@ -1,0 +1,17 @@
+html body {
+    height: 100vh;
+    background-color: lavender;
+}
+.main {
+    display: flex;
+    margin-top: 100px;
+    flex-direction: row;
+    justify-content: center;
+}
+.grid {
+    width: 400px;
+    flex-direction: column;
+}
+.grid-button {
+    margin-top: 10px;
+}
