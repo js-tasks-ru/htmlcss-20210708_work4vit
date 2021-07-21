@@ -9,13 +9,14 @@
     flex-flow: column wrap;
 }
 .skeleton__top{
-    margin: 24px 40px 24px 24px;
+    padding: 24px 40px 24px 24px;
     display: flex;
     flex-flow: row wrap;
     align-items: center;
 }
 .skeleton__bottom{
-    margin: 0px 40px 32px 24px
+    padding: 0px 40px 32px 24px
+
 }
 .skeleton__top_pic{
     background: linear-gradient(92.51deg, #DDE2E5 6.44%, #E2E6E8 38.47%, #F3F5F5 56.48%, #E3E7EA 77.5%, #DDE2E5 102.52%);
@@ -25,6 +26,7 @@
 }
 .skeleton__top_texts{
     margin-left: 16px;
+    width: calc(100% - 64px - 16px);
 }
 .skeleton__text{
     height: 20px;
@@ -36,8 +38,8 @@
     margin-bottom: 0px;
 }
 .skeleton__text_name{
-    width: 172px;
+    width: 30%;
 }
 .skeleton__text_surname{
-    width: 257px;
+    width: 45%;
 }
