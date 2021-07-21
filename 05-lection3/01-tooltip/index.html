@@ -4,8 +4,23 @@
     <head>
         <link rel="stylesheet" href="../../assets/css/main.css">
         <link rel="stylesheet" href="./tooltip.css">
+        <style>
+            html body{
+                height: 100%;
+            }
+            .main{
+                height: 500px;
+                display: flex;
+                flex-flow: row wrap;
+                justify-content: center;
+                margin: auto
+            }
+        </style>
     </head>
-    <body>
-
+    <body class="main">
+        <div class="tooltip">
+            <div class="tooltip__trigger"></div>
+            <div class="tooltip__help">Helper text</div>
+        </div>
     </body>
 </html>
