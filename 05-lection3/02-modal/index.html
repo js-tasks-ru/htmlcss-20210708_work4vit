@@ -4,9 +4,27 @@
     <head>
         <link rel="stylesheet" href="../../assets/css/main.css">
         <link rel="stylesheet" href="./modal.css">
+        <link rel="stylesheet" href="../../03-lection1/01-button/button.css">
         <title>Modal</title>
+        <style>
+            html body{
+                height: 100%;
+                margin: auto;
+                position: relative;
+            }
+        </style>
     </head>
     <body>
+        <button class="button button_primary" id="modal-open">Open modal</button>
+        <div class="modal" id="modal">
+            <div class="modal__overlay" ></div>
+            <div class="modal__popup">
+                <div class="popup__close" id="modal-close"></div>
+                <h3 class="popup__title">Modal title</h3>
+                <p class="popup__paragraph">Amet minim mollit non deserunt ullamco est sit aliqua dolor do amet sint. Velit officia consequat duis enim velit mollit. Exercitation veniam consequat sunt nostrud amet.</p>
+                <p class="popup__paragraph">Amet minim mollit non deserunt ullamco est sit aliqua dolor do amet sint. Velit officia consequat duis enim velit mollit. Exercitation veniam consequat sunt nostrud amet.</p>
+            </div>
+        </div>
     </body>
     <script src="./index.js"></script> 
 </html>
