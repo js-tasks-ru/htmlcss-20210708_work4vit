@@ -3,16 +3,18 @@
     height: 185px;
     border-radius: 8px;
     background: var(--white);
-    margin: 0 auto;
     display: flex;
     flex-flow: column wrap;
+    padding: 16px 24px;
+    box-sizing: border-box;
 }
 .histo__header{
-    margin: 16px 24px 3px 24px;
+    padding-bottom: 3px;
     display: flex;
-    flex-flow: row wrap;
+    flex-flow: row nowrap;
     justify-content: space-between;
     align-items: flex-start;
+    margin: 0;
 }
 .histo__title{
     font-family: Inter;
@@ -20,7 +22,6 @@
     font-weight: normal;
     font-size: 16px;
     line-height: 24px;
-    max-height: 27px;
     margin: 0;
     flex-basis: 50%;
     color: var(--black);
@@ -33,8 +34,9 @@
     font-size: 16px;
     line-height: 24px;
     text-align: right;
-    margin: 3px 0px 0px 0px;
+    padding-top: 3px;
     color: var(--primary);
+    margin: 0;
 }
 .histo__counter{
     font-family: Inter;
@@ -43,14 +45,13 @@
     font-size: 20px;
     line-height: 26px;
     color: var(--black);
-    padding: 0px 24px 3px 24px;
+    padding-bottom: 3px;
     margin: 0;
 }
 .histo__graph{
-    padding: 0px 24px 16px 24px;
     flex-grow: 1;
     display: flex;
-    flex-flow: row wrap;
+    flex-flow: row nowrap;
     align-items: flex-end;
 }
 .histo__bar{
