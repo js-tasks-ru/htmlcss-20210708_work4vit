@@ -1,11 +1,12 @@
 .tooltip{
     display: inline-block;
-
     position: relative;
 }
 .tooltip__trigger{
     width: 24px;
     height: 24px;
+    position: relative;
+    z-index: 100;
     /*background-image: url(../../assets/images/Icon/Help.svg);*/
 }
 .tooltip__help{
@@ -27,7 +28,8 @@
     left: 50%;
     top: 0;
     transform: translate(-50%, -51px);
-    display: none;    
+    display: none;
+    z-index: 0;   
 }
 
 .tooltip__help::before{
@@ -47,14 +49,14 @@
 }
 @keyframes tooltipBlink {
     0% {
-
-        transform: translate(-50%, -60px);
+        transform: translate(-50%, -45px);
         opacity: 0%;
     }
-    100 {
-
-        transform: translate(-50%, -54px);
+    40% {
+        opacity: 0%;
+    }
+    100% {
+        transform: translate(-50%, -51px);
         opacity: 100%;
     }
-    
 }
