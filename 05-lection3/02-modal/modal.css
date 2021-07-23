@@ -1,5 +1,5 @@
 .modal{
-    position: absolute;
+    position: fixed;
     display: none;
     flex-flow: column wrap;
     align-items: center;
@@ -32,7 +32,8 @@
     position: relative;
 }
 .popup__close{
-    background-image: url(../../assets/images/cross_close.svg);
+    
+    );
     width: 16px;
     height: 16px;
     position: absolute;
