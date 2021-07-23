@@ -8,17 +8,9 @@
     width: 100vw;
     height: 100vh;
     justify-content: center;
+    background: rgba(196, 196, 196, 0.8);;
+    
 
-}
-.modal__overlay{
-    position: fixed;
-    height: 100vh;
-    width: 100vw;
-    top: 0px;
-    left: 0px;
-    background: #C4C4C4;
-    opacity: 0.5;
-    z-index: 1;
 }
 .modal__popup{
     z-index: 2;
