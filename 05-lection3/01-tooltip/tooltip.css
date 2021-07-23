@@ -1,6 +1,6 @@
 .tooltip{
     display: inline-block;
-    margin: auto;
+
     position: relative;
 }
 .tooltip__trigger{
@@ -25,7 +25,8 @@
     box-sizing: border-box;
     position: absolute;
     left: 50%;
-    transform: translate(-50%, -170%);
+    top: 0;
+    transform: translate(-50%, -51px);
     display: none;    
 }
 
@@ -47,12 +48,12 @@
 @keyframes tooltipBlink {
     0% {
 
-        transform: translate(-50%, -180%);
+        transform: translate(-50%, -60px);
         opacity: 0%;
     }
     100 {
 
-        transform: translate(-50%, -170%);
+        transform: translate(-50%, -54px);
         opacity: 100%;
     }
     
