@@ -3,9 +3,29 @@
 <html lang="ru">
     <head>
         <link rel="stylesheet" href="../../assets/css/main.css">
+        <link rel="stylesheet" href="../../node_modules/normalize.css/normalize.css">
         <link rel="stylesheet" href="./skeleton.css">
+        <style>
+            .around{
+                background:rgb(240, 240, 240);
+                height: 100%;
+                margin: 100px;
+            }
+        </style>
     </head>
-    <body>
-
+    <body class="around">
+        <div class="skeleton">
+            <div class="skeleton__top">
+                <div class="skeleton__top_pic"></div>
+                <div class="skeleton__top_texts">
+                    <div class="skeleton__text skeleton__text_name"></div>
+                    <div class="skeleton__text skeleton__text_surname"></div>
+                </div>
+            </div>
+            <div class="skeleton__bottom">
+                <div class="skeleton__text"></div>
+                <div class="skeleton__text"></div>
+            </div>
+        </div>
     </body>
 </html>
